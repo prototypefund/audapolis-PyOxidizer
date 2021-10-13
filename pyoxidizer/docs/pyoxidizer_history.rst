@@ -72,6 +72,16 @@ Backwards Compatibility Notes
   Rust project via ``pyoxidizer init-rust-project``, you may wish to create a
   fresh project and reconcile differences in the auto-generated files to ensure
   things now build as expected.
+* Default Python distributions on macOS are now always built with macOS SDK
+  11.3. Previously, CPython 3.8 used the 10.15 SDK and 3.9 used the 11.1 SDK.
+
+New Features
+^^^^^^^^^^^^
+
+* Default Python distributions upgraded from 3.8.11 and 3.9.6 to 3.8.12 and
+  3.9.7. Various library dependencies have also been upgraded. See
+  https://github.com/indygreg/python-build-standalone/releases/tag/20211012 for
+  the full list of changes.
 
 Other Relevant Changes
 ^^^^^^^^^^^^^^^^^^^^^^
